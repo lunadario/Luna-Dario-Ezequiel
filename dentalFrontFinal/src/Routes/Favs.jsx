@@ -1,18 +1,16 @@
-import React from "react";
-import Card from "../Components/Card";
+import React, { useContext } from 'react';
 
-//Este componente debera ser estilado como "dark" o "light" dependiendo del theme del Context
 
 const Favs = () => {
 
+
+  // Obtener los elementos favoritos del localStorage
+
   return (
-    <>
-      <h1>Dentists Favs</h1>
-      <div className="card-grid">
-        {/* este componente debe consumir los destacados del localStorage */}
-        {/* Deberan renderizar una Card por cada uno de ellos */}
-      </div>
-    </>
+    <div className="asd">
+      <h1>Favorite Dentists</h1>
+      {/* Renderizar las tarjetas de los dentistas favoritos */}
+    </div>
   );
 };
 
