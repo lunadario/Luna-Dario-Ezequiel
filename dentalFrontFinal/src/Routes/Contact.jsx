@@ -22,31 +22,32 @@ const Contact = () => {
   };
 
   return (
-    <div>
-      <h1>Contacto</h1>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="name">Nombre:</label>
-          <input
-            type="text"
-            id="name"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </div>
-        <div>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            id="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-          />
-        </div>
-        <button type="submit">Enviar</button>
-      </form>
-      {message && <p>{message}</p>}
-    </div>
+    <div className="contact-form">
+    <h1>Contacto</h1>
+    <form onSubmit={handleSubmit}>
+      <div className="form-group">
+        <label htmlFor="name">Nombre:</label>
+        <input
+          type="text"
+          id="name"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+        />
+      </div>
+      <div className="form-group">
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+      </div>
+      <button type="submit">Enviar</button>
+    </form>
+    {message && <p className="form-message">{message}</p>}
+  </div>
+  
   );
 };
 

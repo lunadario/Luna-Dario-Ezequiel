@@ -7,7 +7,7 @@ const Navbar = () => {
   const { state, setTheme } = useContext(ContextGlobal);
 
   return (
-    <nav >
+    <nav className="navbar">
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -19,7 +19,9 @@ const Navbar = () => {
           <Link to="/favs">Destacados</Link>
         </li>
       </ul>
-      <button >Cambiar tema</button>
+      <button className="theme-button" onClick={() => setTheme('dark')}>
+        Cambiar tema
+      </button>
     </nav>
   );
 };

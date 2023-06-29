@@ -52,7 +52,7 @@ const Form = () => {
         ></textarea>
 
         <button type="submit">Submit</button>
-      </form>
+      </form> <img src="../../public/img/doctor.jpg" alt="" />
     </div>
   );
 };

@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ContextGlobal } from './utils/global.context';
+
 
 const Card = ({ name, username, id, onClick }) => {
-  const { state, setTheme } = useContext(ContextGlobal);
+ 
 
   return (
+    
+   <>
+   
+   
+  <div> </div>
     <div>
+
       <h3>{name}</h3>
+
       <p>{username}</p>
       <button onClick={() => onClick(id)}>
         {localStorage.getItem('favorites')?.includes(id)
@@ -16,6 +23,7 @@ const Card = ({ name, username, id, onClick }) => {
       </button>
       <Link to={`/dentist/${id}`}>Ver detalle</Link>
     </div>
+   </>
   );
 };
 
