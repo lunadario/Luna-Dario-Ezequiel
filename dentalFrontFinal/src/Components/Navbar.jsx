@@ -2,12 +2,17 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { ContextGlobal } from './utils/global.context';
 
-
 const Navbar = () => {
   const { state, setTheme } = useContext(ContextGlobal);
+  const { theme } = state;
+
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  };
 
   return (
-    <nav className="navbar">
+    <nav className={`navbar ${theme === 'dark' ? 'dark-theme' : ''}`}>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -19,8 +24,8 @@ const Navbar = () => {
           <Link to="/favs">Destacados</Link>
         </li>
       </ul>
-      <button className="theme-button" onClick={() => setTheme('dark')}>
-        Cambiar tema
+      <button className="theme-button" onClick={toggleTheme}>
+        {theme === 'dark' ? '☀️' : '🌑'}
       </button>
     </nav>
   );
