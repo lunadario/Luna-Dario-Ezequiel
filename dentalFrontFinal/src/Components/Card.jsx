@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import Detail from '../Routes/Detail';
 
 
 const initialState = {
@@ -57,14 +58,16 @@ const Card = ({ name, username, id }) => {
     <div className='card'>   
       <div className='dentist-list'>
         <Link to={`/dentist/${id}`}>
-        <img className="dentist-image" src="/img/doctor.jpg" alt="" />
+        <img className="dentist-image" src="/img/doc.jpg" alt="" />
           <h3>{name}</h3>
           <p>{username}</p>
-          
+        
         </Link>
         <button onClick={handleFavoriteToggle}>
           {isFavorite ? '⭐️' : '☆'}
         </button>
+        <Link to="/detail">detalles</Link>
+        
       </div>
     </div>
   );

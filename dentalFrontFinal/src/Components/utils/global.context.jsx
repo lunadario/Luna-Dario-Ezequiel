@@ -20,3 +20,4 @@ export const ContextProvider = ({ children }) => {
     <ContextGlobal.Provider value={value}>{children}</ContextGlobal.Provider>
   );
 };
+

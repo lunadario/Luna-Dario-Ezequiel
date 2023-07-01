@@ -41,15 +41,12 @@ const Home = () => {
               
              
               <Card
-
                 name={dentist.name}
                 username={dentist.username}
                 id={dentist.id}
                 onClick={handleFavoriteClick}
               />
-              <Link to={`/dentist/${dentist.id}`} className="detail-link">
-                Ver detalle
-              </Link>
+          
             </li>
           ))}
         </ul>

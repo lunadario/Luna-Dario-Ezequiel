@@ -21,7 +21,10 @@ const Navbar = () => {
           <Link to="/contact">Contacto</Link>
         </li>
         <li>
-          <Link to="/favs">Destacados</Link>
+          <Link to="/favs">Favoritos</Link>
+        </li>
+        <li>
+          <Link to="/detail">Detalles</Link>
         </li>
       </ul>
       <button className="theme-button" onClick={toggleTheme}>

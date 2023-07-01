@@ -7,25 +7,20 @@ import Favs from './Routes/Favs';
 import Detail from './Routes/Detail';
 import Footer from './Components/Footer';
 
-const App = () => {
-
-  
+const App = ({ isDarkMode, toggleDarkMode }) => {
   return (
-  
-    <div className= "App">
-     
-     <Navbar />
-        <Routes>
-          <Route path="/home" element={<Home />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/favs" element={<Favs />} />
-          <Route path="/detail" element={<Detail />} />
-        </Routes>
-        <Footer />
+    <div className={`App ${isDarkMode ? 'dark-mode' : ''}`}>
+      <Navbar isDarkMode={isDarkMode} toggleDarkMode={toggleDarkMode} />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/favs" element={<Favs />} />
+        <Route path="/detail" element={<Detail />} />
+      </Routes>
+      <Footer />
     </div>
-        
-   
   );
-}
+};
 
 export default App;
