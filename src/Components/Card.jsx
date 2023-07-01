@@ -55,8 +55,8 @@ const Card = ({ name, username, id }) => {
   };
 
   return (
-    <div className='card'>   
-      <div className='dentist-list'>
+    <div className='carde'>   
+      <div className='card'>
         <Link to={`/dentist/${id}`}>
         <img className="dentist-image" src="/img/doc.jpg" alt="" />
           <h3>{name}</h3>

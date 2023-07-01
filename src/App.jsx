@@ -16,7 +16,7 @@ const App = ({ isDarkMode, toggleDarkMode }) => {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/favs" element={<Favs />} />
-        <Route path="/detail" element={<Detail />} />
+        <Route path="/detail/:id" element={<Detail />} />
       </Routes>
       <Footer />
     </div>

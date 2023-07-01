@@ -23,9 +23,7 @@ const Navbar = () => {
         <li>
           <Link to="/favs">Favoritos</Link>
         </li>
-        <li>
-          <Link to="/detail">Detalles</Link>
-        </li>
+        
       </ul>
       <button className="theme-button" onClick={toggleTheme}>
         {theme === 'dark' ? '☀️' : '🌑'}
