@@ -37,8 +37,10 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@babel/plugin-transform-private-property-in-object": "^7.25.9",
     "msw": "^0.47.3"
+  },
+  "engines": {
+    "node": "16.x"
   }
 }
