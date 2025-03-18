@@ -31,15 +31,16 @@ const Home = () => {
       <div>
         <h1>Home</h1>
       </div>
+     
       <div className="card">
         {/* <button className="theme-button" onClick={() => setTheme('dark')}>
           Cambiar tema
         </button> */}
-        <ul className="dentist-list">
-          {dentists.map(dentist => (
-            <li key={dentist.id} className="dentist-item">
+       <ul className="dentist-list">
+           {dentists.map(dentist => (
+          
               
-             
+          
               <Card
                 name={dentist.name}
                 username={dentist.username}
@@ -47,10 +48,11 @@ const Home = () => {
                 onClick={handleFavoriteClick}
               />
           
-            </li>
+            
           ))}
         </ul>
       </div>
+      
     </>
   );
 };

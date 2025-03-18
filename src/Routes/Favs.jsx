@@ -26,6 +26,9 @@ const Favs = () => {
   return (
     <div className="favsContainer">
       <h1>Tus dentistas favoritos...</h1>
+      
+      <ul className="dentist-list">
+
       <div className="cardsFavs">
         {favorites.length === 0 ? (
           <p>No existen favoritos.</p>
@@ -42,6 +45,7 @@ const Favs = () => {
           ))
         )}
       </div>
+      </ul>
     </div>
   );
 };

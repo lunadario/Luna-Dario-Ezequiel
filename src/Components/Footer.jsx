@@ -6,7 +6,7 @@ const Footer = () => {
       <img src="/img/DH.PNG" alt="Logo" className="footer-logo" />
       <img src="/img/ico-facebook.png" alt="Logo" className="" />
     
-      <p>Derechos reservados &copy; 2023</p>
+      <p>Derechos reservados &copy; 2024</p>
     </footer>
   );
 };

@@ -168,10 +168,11 @@ tr:nth-child(even) {
   padding: 11px;
   margin: 8px;
   border-radius: 8px;
-  background-color: beige;
+  /* background-color: rgb(156, 127, 236); */
   flex-grow: 1;
   flex-direction: column;
   flex-wrap: wrap;
+  box-shadow: 0 6px 8cqw rgba(12, 12, 0, 0.1);
 }
 
 .carde{
@@ -185,6 +186,7 @@ tr:nth-child(even) {
 
 
 .cardsFavs {
+  /* background: #a79fe9; */
  width:1200px;
   flex-grow: 1;
     display: flex;
@@ -192,7 +194,7 @@ tr:nth-child(even) {
     text-align: center;
     margin: 8px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    box-shadow: 0 2px 4px rgba(26, 1, 1, 0.1);
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;}
@@ -222,6 +224,7 @@ background-color: #cbdae7;
       border-radius: 10px;
       justify-content: center;
       height: auto;
+      width: 230px;
   }
   
   .auth-page {
@@ -374,4 +377,26 @@ nav.dark-theme ul li a {
   color: #d31414;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.dentist-list {
+  /* background:#a79fe9 ; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Puedes usar space-between o space-around si prefieres */
+  gap: 15px; /* Espaciado entre las tarjetas */
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1200px; /* Ajusta esto según el ancho deseado */
+}
+
+.dentist-item {
+  width: 230px; /* Ajusta según el tamaño deseado */
+  background:rgb(156, 127, 236); 
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
